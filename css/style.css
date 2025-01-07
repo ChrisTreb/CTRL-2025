@@ -11,7 +11,7 @@
 #content {
   width: 100vw;
   min-height: 100vh;
-  
+  background: radial-gradient(circle, rgba(217,35,35,1) 0%, rgba(115,36,36,1) 35%, rgba(13,13,13,1) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,9 +24,9 @@
   justify-content: center;
   width: 500px;
   height: 500px;
-  border: 1px solid black;
+  border: 50px solid #0D0D0D;
   border-radius: 50%;
-  background-color: #342C1D;;
+  background-color: #F2E852;
 }
 
 /* Circle */
@@ -36,9 +36,9 @@
   justify-content: center;
   width: 300px;
   height: 300px;
-  border: 1px solid black;
+  border: 25px solid #0D0D0D;
   border-radius: 50%;
-  background: #0F0C07;
+  background: #8C6723;
 }
 
 /* Button menu */
@@ -48,7 +48,7 @@
   height: 100px;
   padding: 10px;
   border: 2px solid #2c2c2c;
-  background-color: #1a1a1a;
+  background-color: #0D0D0D;
   color: #ffffff;
   font-size: 1.2rem;
   cursor: pointer;
@@ -81,8 +81,8 @@
 }
 
 #btn-menu:hover {
-  border-color: #666666;
-  background: #292929;
+  border-color: #0D0D0D;
+  background: #8C6723;
 }
 
 /* Nav */
@@ -126,7 +126,7 @@
   display: flex;
   align-items: center;
   transition: 1s;
-  background: #C99846;
+  background: #d92323;
   border-radius: 25px;
   border: 1px solid #1a1a1a;
   padding: 5px 20px 5px 100px;
@@ -136,7 +136,7 @@
 }
 
 .nav-item:hover {
-  background-color: #342C1D;
+  background-color: #0D0D0D;
   color: white;
 }
 

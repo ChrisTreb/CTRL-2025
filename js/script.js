@@ -35,12 +35,3 @@ function setTimeoutRotate(index, deg, ms) {
         NAV_ITEMS[index].style.transform = "rotate(" + deg + "deg)";
     }, ms);
 }
-
-var angle = 0;
-
-function rotate() {
-    NAV_ITEMS[2].style.transform = "rotate(" + angle + "deg)";
-    angle += 10;
-}
-
-setInterval(rotate, 200);

@@ -4,19 +4,20 @@ const BTN_MENU = document.getElementById("btn-menu");
 const MENU = document.getElementById("menu");
 // Nav items
 const NAV_ITEMS = document.getElementsByClassName("nav-item");
-
-var menuOpen = false;
+// Nav link list
+const NAV_LINK_LIST = document.getElementById("nav-link-list");
 
 // Button menu behaviour
 function toggleMenu() {
     if (MENU.classList.contains("hide")) {
+
+        NAV_LINK_LIST.style.transform = "translateX(400px)";
         // Remove hide class
         MENU.classList.replace("hide", "show");
-        setTimeoutRotate(0, -60, 200);
-        setTimeoutRotate(1, -30, 300);
-        setTimeoutRotate(3, 30, 400);
-        setTimeoutRotate(4, 60, 500);
-        menuOpen = true;
+        setTimeoutRotate(0, -60, 300);
+        setTimeoutRotate(1, -30, 400);
+        setTimeoutRotate(3, 30, 500);
+        setTimeoutRotate(4, 60, 600);
     } else {
         setTimeoutRotate(0, 0, 200);
         setTimeoutRotate(1, 0, 300);
@@ -25,8 +26,9 @@ function toggleMenu() {
         // Remove hide class
         setTimeout(() => {
             MENU.classList.replace("show", "hide");
-        }, 600);
-        menuOpen = false;
+            NAV_LINK_LIST.style.transform = "translateX(-400px)";
+        }, 1000);
+        
     }
 }
 

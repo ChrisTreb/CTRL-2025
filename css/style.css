@@ -18,6 +18,8 @@
 
 /* Circle */
 #big-circle {
+  position: absolute;
+  left: -180px;
   display: flex;
   align-items: center;
   justify-content: center;

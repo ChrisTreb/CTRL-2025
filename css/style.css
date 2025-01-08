@@ -11,7 +11,6 @@
 #content {
   width: 100vw;
   min-height: 100vh;
-  background: radial-gradient(circle, rgba(217,35,35,1) 0%, rgba(115,36,36,1) 35%, rgba(13,13,13,1) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,9 +23,9 @@
   justify-content: center;
   width: 500px;
   height: 500px;
-  border: 50px solid #0D0D0D;
+  border: 1px solid #0D0D0D;
   border-radius: 50%;
-  background-color: #F2E852;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Circle */
@@ -36,16 +35,16 @@
   justify-content: center;
   width: 300px;
   height: 300px;
-  border: 25px solid #0D0D0D;
+  border: 1px solid #0D0D0D;
   border-radius: 50%;
-  background: #8C6723;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Button menu */
 #btn-menu {
   z-index: 100;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   padding: 10px;
   border: 2px solid #2c2c2c;
   background-color: #0D0D0D;
@@ -58,6 +57,7 @@
   position: relative;
   overflow: hidden;
   font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #btn-menu::after {
@@ -82,7 +82,7 @@
 
 #btn-menu:hover {
   border-color: #0D0D0D;
-  background: #8C6723;
+  background: #131313;
 }
 
 /* Nav */
@@ -131,7 +131,7 @@
   border: 1px solid #1a1a1a;
   padding: 5px 20px 5px 100px;
   transition: 0.5s;
-  transform-origin: 0 50%;
+  transform-origin: 30px 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 

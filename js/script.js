@@ -5,6 +5,8 @@ const MENU = document.getElementById("menu");
 // Nav items
 const NAV_ITEMS = document.getElementsByClassName("nav-item");
 
+var menuOpen = false;
+
 // Button menu behaviour
 function toggleMenu() {
     if (MENU.classList.contains("hide")) {
@@ -14,8 +16,7 @@ function toggleMenu() {
         setTimeoutRotate(1, -30, 300);
         setTimeoutRotate(3, 30, 400);
         setTimeoutRotate(4, 60, 500);
-        // Remove hide class
-        MENU.classList.replace("hide", "show");
+        menuOpen = true;
     } else {
         setTimeoutRotate(0, 0, 200);
         setTimeoutRotate(1, 0, 300);
@@ -25,6 +26,7 @@ function toggleMenu() {
         setTimeout(() => {
             MENU.classList.replace("show", "hide");
         }, 600);
+        menuOpen = false;
     }
 }
 
@@ -33,3 +35,12 @@ function setTimeoutRotate(index, deg, ms) {
         NAV_ITEMS[index].style.transform = "rotate(" + deg + "deg)";
     }, ms);
 }
+
+var angle = 0;
+
+function rotate() {
+    NAV_ITEMS[2].style.transform = "rotate(" + angle + "deg)";
+    angle += 10;
+}
+
+setInterval(rotate, 200);

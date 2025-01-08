@@ -16,30 +16,31 @@
 
 <body>
 	<div id="content">
-		<div id="big-circle">
-			<nav id="menu" class="hide">
-				<ul id="nav-link-list">
-					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="fa-solid fa-address-card"></i> About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
-					</li>
-					<li id="main-item" class="nav-item">Christophe Trébaol</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="fa-brands fa-docker"></i> Techs</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="fa-solid fa-paper-plane"></i> Contact</a>
-					</li>
-				</ul>
-			</nav>
-			<div id="circle">
-				<button id="btn-menu" onclick="toggleMenu()">
-					<i class="fa-solid fa-bars"></i>
-				</button>
-			</div>
+		<div id="big-circle" class="rotating"></div>
+		<div id="circle" class="rotating">
+			<button id="btn-menu" onclick="toggleMenu()">
+				<i class="fa-solid fa-bars"></i>
+			</button>
 		</div>
+		<nav id="menu" class="hide">
+			<ul id="nav-link-list">
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fa-solid fa-address-card"></i> About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fa-brands fa-github-alt"></i> GitHub</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fa-brands fa-docker"></i> Techs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+				</li>
+			</ul>
+		</nav>
 	</div>
 
 	<script src="./js/script.js" async defer></script>

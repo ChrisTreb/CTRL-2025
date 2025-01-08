@@ -32,13 +32,22 @@ body {
   justify-content: center;
   width: 600px;
   height: 600px;
-  border: 1px solid #0d0d0d46;
   border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-image: url(../img/wheel.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+}
+
+.rotating {
+  animation: rotating 10s linear infinite;
 }
 
 /* Circle */
 #circle {
+  position: absolute;
+  left: -20px;
   z-index: 50;
   display: flex;
   align-items: center;
@@ -48,7 +57,11 @@ body {
   border: 1px solid #0d0d0d46;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background: white;
+  background-image: url(../img/bearing.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
 }
 
 /* Button menu */
@@ -98,21 +111,15 @@ body {
 
 /* Nav */
 #menu {
+  position: absolute;
+  left: -120px;
+  z-index: 25;
   width: 300px;
   height: 50px;
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 2s;
-}
-
-.hide {
-  opacity: 0;
-}
-
-.show {
-  opacity: 1;
 }
 
 #nav-link-list {
@@ -124,14 +131,9 @@ body {
   transition: 0.5s;
 }
 
-#main-item {
-  font-family: "Mukta", serif;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
 .nav-item {
   position: absolute;
+  z-index: 25;
   left: 125px;
   width: 500px;
   height: 50px;
@@ -143,13 +145,13 @@ body {
   padding: 5px 20px 5px 140px;
   transition: 0.5s;
   transform-origin: 30px 50%;
-  background-color: rgba(255, 255, 255, 0.658);
+  background-color: rgba(255, 255, 255, 0.95);
   border-top: 1px solid #0d0d0d46;
   border-bottom: 1px solid #0d0d0d46;
 }
 
 .nav-item:hover {
-  background-color: #c9c9c969;
+  background-color: #c9c9c9;
 }
 
 .nav-link {
@@ -158,4 +160,22 @@ body {
   font-family: "Mukta", serif;
   font-size: 30px;
   font-weight: bold;
+}
+
+/* Animations */
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }

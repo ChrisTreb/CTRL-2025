@@ -13,10 +13,6 @@ const CIRCLE = document.getElementById("circle");
 // Button menu behaviour
 function toggleMenu() {
     if (MENU.classList.contains("hide")) {
-        BIG_CIRCLE.style.transform = window.getComputedStyle(BIG_CIRCLE).getPropertyValue("transform")||"initial";
-        CIRCLE.style.transform = window.getComputedStyle(CIRCLE).getPropertyValue("transform")||"initial";
-        BIG_CIRCLE.classList.remove("rotating");
-        CIRCLE.classList.remove("rotating");
         NAV_LINK_LIST.style.transform = "translateX(400px)";
         // Remove hide class
         MENU.classList.replace("hide", "show");
@@ -34,10 +30,6 @@ function toggleMenu() {
             MENU.classList.replace("show", "hide");
             NAV_LINK_LIST.style.transform = "translateX(-400px)";
         }, 1000);
-        setTimeout(() => {
-            BIG_CIRCLE.classList.add("rotating");
-            CIRCLE.classList.add("rotating");
-        }, 1500);
     }
 }
 

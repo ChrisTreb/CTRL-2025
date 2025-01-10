@@ -32,11 +32,9 @@ body {
   justify-content: center;
   width: 600px;
   height: 600px;
+  border: 1px solid #0d0d0d46;
   border-radius: 50%;
-  background-image: url(../img/wheel.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.5s;
 }
 
@@ -57,11 +55,8 @@ body {
   border: 1px solid #0d0d0d46;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-image: url(../img/bearing.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   transition: 0.5s;
+  background-color: white;
 }
 
 /* Button menu */

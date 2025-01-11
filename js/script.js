@@ -43,7 +43,7 @@ function setTimeoutRotate(index, deg, ms) {
     setTimeout(() => {
         NAV_ITEMS[index].style.transform = "rotate(" + deg + "deg)";
         if(MENU.classList.contains("show")) {
-            NAV_ITEMS_SEPARATORS[index].style.transform = "rotate(" + (deg + 15) + "deg)";
+            NAV_ITEMS_SEPARATORS[index].style.transform = "rotate(" + (deg + 20) + "deg)";
         } else {
             NAV_ITEMS_SEPARATORS[index].style.transform = "rotate(0deg)";
         }

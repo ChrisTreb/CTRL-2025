@@ -13,11 +13,11 @@ body {
   max-width: 100vw;
 }
 
-/* Content global */
-#content {
+/* Hero */
+#hero {
   width: 100vw;
   max-width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,10 +36,6 @@ body {
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.5s;
-}
-
-.rotating {
-  animation: rotating 10s linear infinite;
 }
 
 /* Circle */
@@ -137,40 +133,37 @@ body {
   transition: 1s;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  padding: 5px 20px 5px 140px;
+  padding: 5px 50px 5px 170px;
   transition: 0.5s;
   transform-origin: 30px 50%;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-top: 1px solid #0d0d0d46;
-  border-bottom: 1px solid #0d0d0d46;
-}
-
-.nav-item:hover {
-  background-color: #c9c9c9;
 }
 
 .nav-link {
+  width: 150px;
+  height: 50px;
   color: #0D0D0D;
   text-decoration: none;
   font-family: "Mukta", serif;
   font-size: 30px;
   font-weight: bold;
+  transform: rotate(6deg);
+  margin-top: 10px;
+  background-color: #ffffff;
 }
 
-/* Animations */
-@keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+.nav-item-separator {
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  left: 125px;
+  width: 500px;
+  transform-origin: 30px 50%;
+  color: #0d0d0d36;
+  transition: 0.5s;
+}
+
+/* Content global */
+#about, #portfolio, #techs, #contact {
+  width: 100vw;
+  height: 100vh;
 }

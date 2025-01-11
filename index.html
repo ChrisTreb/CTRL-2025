@@ -15,7 +15,7 @@
 </head>
 
 <body>
-	<div id="content">
+	<div id="hero">
 		<div id="big-circle"></div>
 		<div id="circle">
 			<button id="btn-menu" onclick="toggleMenu()">
@@ -24,23 +24,42 @@
 		</div>
 		<nav id="menu" class="hide">
 			<ul id="nav-link-list">
+				<li><hr class="nav-item-separator"></li>
+				<li><hr class="nav-item-separator"></li>
+				<li><hr class="nav-item-separator"></li>
+				<li><hr class="nav-item-separator"></li>
+				<li><hr class="nav-item-separator"></li>
+				
 				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fa-solid fa-address-card"></i> About</a>
+					<a class="nav-link" href="#about">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
+					<a class="nav-link" href="#portfolio">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fa-brands fa-github-alt"></i> GitHub</a>
+					<a class="nav-link" target="_blank" href="https://github.com/ChrisTreb">GitHub</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fa-brands fa-docker"></i> Techs</a>
+					<a class="nav-link" href="#techs">Techs</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+					<a class="nav-link" href="#contact">Contact</a>
 				</li>
+				
 			</ul>
 		</nav>
+	</div>
+	<div id="about">
+		<h2>About me</h2>
+	</div>
+	<div id="portfolio">
+		<h2>Portfolio</h2>
+	</div>
+	<div id="techs">
+		<h2>Techs</h2>
+	</div>
+	<div id="contact">
+		<h2>Contact</h2>
 	</div>
 
 	<script src="./js/script.js" async defer></script>

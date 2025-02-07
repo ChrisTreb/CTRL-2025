@@ -180,7 +180,7 @@ body {
   z-index: 30;
   top: 0;
   left: 125px;
-  width: 500px;
+  width: 315px;
   transform-origin: 30px 50%;
   color: #0d0d0d36;
   transition: 0.5s;
@@ -190,4 +190,9 @@ body {
 #about, #portfolio, #techs, #contact {
   width: 100vw;
   height: 100vh;
+  padding: 50px 100px;
+}
+
+h2 {
+  font-size: 3em;
 }
